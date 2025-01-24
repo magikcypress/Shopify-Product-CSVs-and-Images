@@ -1,0 +1,13 @@
+CREATE TABLE orders (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL,
+    address VARCHAR(255) NOT NULL,
+    postal_code VARCHAR(10) NOT NULL,
+    city VARCHAR(255) NOT NULL,
+    total_ht DECIMAL(10, 2) NOT NULL,
+    tva DECIMAL(10, 2) NOT NULL,
+    total_ttc DECIMAL(10, 2) NOT NULL,
+    product_id VARCHAR(255) NOT NULL,
+    order_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
